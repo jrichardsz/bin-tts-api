@@ -35,7 +35,7 @@ public String appId = "TyYTiDGMltI66a4CYYlJ9e23cfF_hgv8zTXuinMoPvoY*";
 //initializing
 TranslateEnvironment.init( translateAudioUrl, appId);
 
-// this code get response of google engine
+// this code get response of bing engine as stream
 Audio audio = Audio.getInstance();
 InputStream sound = audio.getAudio("Buongiorno mondo","it-IT");
 audio.play(sound);
