@@ -28,12 +28,12 @@ import org.jrichardsz.bing.tts.context.*;
 import org.jrichardsz.bing.tts.sound.*;
 
 //required values
-String translateAudioUrl = "http://api.microsofttranslator.com/v2/http.svc/speak?appId={appId}&language={languaje}&format=audio/mp3&options=MinSize|male&text={text}";
+String ttsAudioUrl = "http://api.microsofttranslator.com/v2/http.svc/speak?appId={appId}&language={languaje}&format=audio/mp3&options=MinSize|male&text={text}";
 public String appId = "TyYTiDGMltI66a4CYYlJ9e23cfF_hgv8zTXuinMoPvoY*";		
 
 
 //initializing
-TranslateEnvironment.init( translateAudioUrl, appId);
+TranslateEnvironment.init( ttsAudioUrl, appId);
 
 // this code get response of google engine
 Audio audio = Audio.getInstance();

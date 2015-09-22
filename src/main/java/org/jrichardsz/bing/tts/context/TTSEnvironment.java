@@ -1,12 +1,12 @@
 package org.jrichardsz.bing.tts.context;
 
-public class TranslateEnvironment {
+public class TTSEnvironment {
 
-    public static void init(String translateAudioUrl,String yandexAppId)
+    public static void init(String translateAudioUrl,String appId)
 	{
     	
-    	System.getProperties().put(Const.TRANSLATE_AUDIO_URL,translateAudioUrl);
-    	System.getProperties().put(Const.TRANSLATE_AUDIO_APPID,yandexAppId);
+    	System.getProperties().put(Const.TTS_AUDIO_URL,translateAudioUrl);
+    	System.getProperties().put(Const.TTS_AUDIO_APPID,appId);
     	
 	}
     
