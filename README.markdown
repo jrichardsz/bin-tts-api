@@ -33,7 +33,7 @@ public String appId = "TyYTiDGMltI66a4CYYlJ9e23cfF_hgv8zTXuinMoPvoY*";
 
 
 //initializing
-TranslateEnvironment.init( translateAudioUrl, appId);
+TTSEnvironment.init( translateAudioUrl, appId);
 
 // this code get response of bing engine as stream
 Audio audio = Audio.getInstance();
