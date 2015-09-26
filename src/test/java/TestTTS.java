@@ -6,13 +6,13 @@ import org.junit.*;
 
 public class TestTTS {
 
-	public String ttsAudioUrl = "http://api.microsofttranslator.com/v2/http.svc/speak?appId={appId}&language={languaje}&format=audio/mp3&options=MinSize|male&text={text}";
-	public String appId = "TyYTiDGMltI66a4CYYlJ9e23cfF_hgv8zTXuinMoPvoY*";		
+	public String ttsUrl = "http://api.microsofttranslator.com/v2/http.svc/speak?appId={appId}&language={languaje}&format=audio/mp3&options=MinSize|male&text={text}";
+	public String ttsAppIdUrl = "http://www.bing.com/translator/dynamic/{random_number}/js/LandingPage.js";
 		
 	@Test
 	public void testPlay() throws Exception {
 
-		TTSEnvironment.init( ttsAudioUrl, appId);
+		TTSEnvironment.init( ttsUrl, ttsAppIdUrl);
 
 		Audio audio = Audio.getInstance();
 		InputStream sound = audio.getAudio("Buongiorno mondo","it-IT");

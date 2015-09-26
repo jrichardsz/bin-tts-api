@@ -22,8 +22,8 @@ public class Audio {
 	public InputStream getAudio(String text, String languageOutput)
 			throws Exception {
 		
-		String urlString = TTSEnvironment.getSystemProperty(Const.TTS_AUDIO_URL);
-		urlString= urlString.replace("{appId}", TTSEnvironment.getSystemProperty(Const.TTS_AUDIO_APPID));
+		String urlString = TTSEnvironment.getSystemProperty(Const.TTS_URL);
+		urlString= urlString.replace("{appId}", TTSEnvironment.getSystemProperty(Const.TTS_APPID));
 		urlString= urlString.replace("{languaje}",languageOutput);
 		urlString= urlString.replace("{text}",text.replace(" ","%20"));
 		
