@@ -28,14 +28,14 @@ import org.jrichardsz.bing.tts.context.*;
 import org.jrichardsz.bing.tts.sound.*;
 
 //required values
-String ttsAudioUrl = "http://api.microsofttranslator.com/v2/http.svc/speak?appId={appId}&language={languaje}&format=audio/mp3&options=MinSize|male&text={text}";
+String ttsUrl = "http://api.microsofttranslator.com/v2/http.svc/speak?appId={appId}&language={languaje}&format=audio/mp3&options=MinSize|male&text={text}";
 public String appId = "TyYTiDGMltI66a4CYYlJ9e23cfF_hgv8zTXuinMoPvoY*";		
-
+//get your appId from microsoft : https://msdn.microsoft.com/en-us/library/dd440736.aspx
 
 //initializing
-TranslateEnvironment.init( ttsAudioUrl, appId);
+TTSEnvironment.init( ttsUrl, appId);
 
-// this code get response of google engine
+// this code get response of bing engine as stream
 Audio audio = Audio.getInstance();
 InputStream sound = audio.getAudio("Buongiorno mondo","it-IT");
 audio.play(sound);
