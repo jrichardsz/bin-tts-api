@@ -47,7 +47,9 @@ audio.play(sound);
 
 ## Get appId from Bing
 According this information : 
+
 http://stackoverflow.com/a/13871282/3957754
+
 http://stackoverflow.com/a/11807881/3957754
 
 Microsoft no longer lets you create appID.
